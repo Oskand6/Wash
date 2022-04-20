@@ -1,0 +1,175 @@
+html{
+
+  overflow-x: hidden;
+}
+body{
+
+
+  width: 100vw;
+  margin: 0px;
+}
+
+header{
+  grid-area: he;
+  background-color: #e692f8;
+  display: flex;
+  overflow: hidden;
+}
+
+nav{
+
+  grid-area: na;
+    border-style: none none solid none;
+    background-color: #e692f8;
+
+
+}
+
+.button4{
+
+
+height: 40px;
+width: 150px;
+margin-left: 330px;
+margin-right: auto;
+transition: width 3s, height 3s;
+}
+
+
+
+.button4:hover{
+
+
+width: 175px;
+height: 50px;
+
+
+
+}
+
+
+
+
+#searchBar{
+
+margin-top: 10px;
+margin-left: 200px;
+border-radius: 10px;
+
+}
+
+.search-txt{
+
+  height: 30px;
+  width: 300px;
+}
+
+#signIn{
+margin-top: 15px;
+margin-left: 550px;
+height: 70px;
+width: 200px;
+border-radius: 15px;
+font-size: 30px;
+
+}
+
+
+
+
+
+
+main{
+  grid-area: ma;
+  background-color: #f2c9fb;
+  border-left: solid;
+  position: sticky;
+
+;
+
+
+
+
+
+
+}
+
+aside{
+grid-area: as;
+background-color: #e692f8;
+border-style: none none solid none;
+
+
+}
+
+#Aside2{
+
+background-color: #e692f8;
+grid-area: As;
+border-style: none none solid solid;
+
+}
+
+#kat{
+
+  margin-top: 100px;
+
+}
+
+
+
+.button1{
+
+
+height:8vh;
+width: 120px;
+margin-left: 10px;
+margin-top: 70px;
+border-radius: 20px;
+}
+
+#profil{
+margin-top: 100px;
+
+}
+
+.button2{
+
+height: 5vh;
+width:60px;
+margin-left: 10px;
+margin-top: 10px;
+border-radius: 20px;
+
+}
+
+.button3{
+height: 40vh;
+width: 20vw;
+margin: 35px;
+margin-top: 45px;
+}
+
+
+
+#wrapper{
+
+
+  display: grid;
+  grid-template-columns: 12vw 39vw 39vw 12vw;
+  grid-template-rows:17vh 10vh 40vh 40vh 40vh 40vh ;
+  min-height: 0;  /* NEW */
+ min-width: 0;   /* NEW; needed for Firefox */
+  grid-template-areas:
+
+  "he he he he"
+  "na na na na"
+  "as ma ma As"
+  "as ma ma As"
+  "as ma ma As"
+  "as ma ma As"
+
+
+
+
+  }
