@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/master.css">
+    <title></title>
+
+  </head>
+  <body>
+
+    <div id="wrapper">
+
+
+    <header>
+
+    <button id="homePage" type="button" name="button"></button>
+
+
+
+
+
+  <div id="searchBar">
+    <input class="search-txt" type="text" name="" placeholder="Type to search">
+
+
+   </div>
+  <input class="submit" type="submit">
+
+
+        <button id="signIn" type="button" name="button" >
+      Login
+        </button>
+
+
+    </header>
+
+
+<nav>
+
+  <button class="button4" onclick="window.location.href='Outlet.html';">Outlet</button>
+  <button class="button4" type="button" name="button">New products</button>
+  <button class="deal" type="button" name="button">Deal wheel</button>
+
+</nav>
+
+
+
+
+
+    <main>
+
+
+
+
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+    <button class="button3" type="button" name="button"></button>
+
+
+
+
+
+
+    </main>
+
+
+    <aside>
+
+
+
+
+
+
+
+    </aside>
+
+    <div id="Aside2">
+
+
+
+
+    </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+
+
+$(document).ready(function(){
+
+
+
+  $("#signIn").click(function(){
+
+ window.location.href='logIn.html';
+
+  });
+
+
+  var h =false;
+  var byt = document.getElementById('signIn');
+
+var x = localStorage.getItem("user");
+
+console.log(x);
+    if (x==null) {
+
+
+      byt.textContent ="Login";
+
+    }else{
+
+      byt.textContent =x;
+
+    }
+
+
+
+});
+
+
+
+$(".deal").click(function(){
+
+   window.location.href='deal.html';
+
+   });
+
+
+
+
+    </script>
+
+
+  </body>
+</html>

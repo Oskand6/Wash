@@ -1,0 +1,95 @@
+body{
+
+
+    background: linear-gradient(90deg, #e692f8, #800080);
+    margin: 0px;
+    height: 100vh;
+    overflow: hidden;
+
+}
+
+.centerBox{
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%); /* fungerar som margin, man kan flytta saker horisontellt och vertikal*/
+width: 400px;
+background-color: white;
+border-radius: 15px;
+
+
+}h1{
+
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid purple;
+}
+
+.centerBox form{
+
+margin-left: 50px;        /*innehållet i form flyttar på sig */
+padding: 0 40px 0 0;
+
+}
+
+
+form .txtField{
+  position: relative;
+  border-bottom: 1px solid purple;
+  margin: 30px 0px;
+}
+
+.txtField input{     /* bestämmer input lådornas höjd, bredd och tar bort border */
+
+  width: 100%;
+  border: none;
+  height: 40px;
+  outline: none; /* när man trycker på en input så ser man inte outlinen längre*/
+
+}
+
+.txtField label{
+
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  transition: 1s;
+
+}
+
+.txtField span::before{  /* span är osynlig när man inte fokuserar på input lådorna, alltså när man inte skriver något*/
+position: absolute;
+background: royalBlue;
+width: 0%;
+height: 2px;
+content: '';
+transition: 1s;
+
+
+}
+
+.txtField input:focus ~ label, /*flyttar upp label av antingen username eller password, beror på vilken av input lådorna man fokuserar*/
+.txtField input:valid ~ label{
+
+  top:-7px;   /* bottom fungerar inte*/
+  color: royalBlue;
+}
+
+.txtField input:focus ~ span::before, /* när man fokuserar en av input lådorna så blir span synlig igen och får färgen royalBlue*/
+.txtField input:valid ~ span::before{
+
+width: 100%;
+
+}
+
+.loginKnapp{
+
+width: 100%;
+height: 40px;
+border-radius: 10px;
+border: 2px solid purple;
+margin-bottom: 20px;
+
+}
