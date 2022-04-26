@@ -95,18 +95,38 @@ main{
 }
 
 aside{
+
+  position:  sticky;
+  margin-left: auto;
+  margin-right: auto;
+
 grid-area: as;
 background-color: #e692f8;
 border-style: none none solid none;
+
+overflow: hidden;
+
+
 
 
 }
 
 #Aside2{
 
+  position: sticky;
+  margin-left: auto;
+  margin-right: auto;
+
 background-color: #e692f8;
 grid-area: As;
 border-style: none none solid solid;
+
+overflow: hidden;
+
+
+
+
+
 
 }
 

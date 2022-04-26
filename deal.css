@@ -142,3 +142,8 @@ span b{
     right: -40px;
   }
 }
+#tillbaka{
+  position:absolute;
+  left: 20px;
+  top: 10px;
+}
